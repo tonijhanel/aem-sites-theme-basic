@@ -1,0 +1,63 @@
+
+//== Base
+
+html,
+body {
+    margin: 0;
+    font-size:   $font-size;
+    font-family: $font-family;
+    line-height: $font-height;
+    color:       $color-foreground;
+    background:  $color-background;
+}
+
+
+a {
+    color: $color-link;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
+}
+
+//== Grid
+
+// Default breakpoint
+.aem-Grid {
+    @include generate-grid(default, $max_col);
+}
+
+// Phone breakpoint
+@media (max-width: 768px) {
+    .aem-Grid {
+        @include generate-grid(phone, $max_col);
+    }
+}
+
+
+.cmp-title--example {
+ .cmp-title {
+  text-align: center;
+
+  .cmp-title__text {
+   color: #EB212E;
+   font-weight: 600;
+   font-size: 5rem;
+   border-bottom: solid 1px #ddd;
+   padding-bottom: 0;
+   margin-bottom: .25rem
+  }
+
+  // Last Modified At element injected via JS
+  .cmp-title__last-modified-at {
+   color: #999;
+   font-size: 1.5rem;
+   font-style: italic;
+   font-weight: 200;
+  }
+ }
+}
