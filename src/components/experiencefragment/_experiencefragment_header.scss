@@ -30,6 +30,10 @@
         padding: 0;
         list-style: none;
     }
+
+      .cmp-navigation__group a:hover{
+        text-decoration: none;
+      }
     .cmp-navigation__item--level-0 {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -41,15 +45,25 @@
     }
     .cmp-navigation__item-link {
         display: block;
+        color:#666;
+        font-size: 15px;
     }
+
+    
     .cmp-navigation__item--active > .cmp-navigation__item-link {
         font-weight: bold;
     }
 
+    .cmp-navigation__item-link:hover{
+      color:#333;
+    }
     //== Language Navigation
 
     .cmp-languagenavigation {
         position: relative;
+
+        /* added here */
+        color: #fff;
 
         &::before {
             content: " ";
@@ -65,21 +79,36 @@
             position: absolute;
             top: 34px;
             width: 20em;
-            padding: 0 8px;
+            padding: 8px 8px 0px 8px;
+            /*padding: 0 8px;*/
+
             border: 1px solid $color-foreground;
+             border-radius: 5px 5px 5px 5px;
             border-top: 0;
-            background: $color-background;
+
+          /*  background: $color-background;
+          background: #1c1c1c;*/
+          background:linear-gradient(#4A484A ,#2B292B);
+            color: white;
         }
         &:hover > .cmp-languagenavigation__group {
             visibility: visible;
             transition-delay: 0s;
+            color: white;
+            text-decoration: none;
+            background:linear-gradient(#7A747A ,#2B292B);
         }
     }
     .cmp-languagenavigation__group {
         margin: 0;
         padding: 0;
         list-style: none;
+        color: white;
     }
+
+      .cmp-languagenavigation__group a {
+        text-decoration: none;
+      }
     .cmp-languagenavigation__item-title {
         font-size: x-small;
         text-transform: uppercase;
@@ -87,6 +116,9 @@
     .cmp-languagenavigation__item--level-0 {
         margin-bottom: .5em;
     }
+
+
+
     .cmp-languagenavigation__item--level-1 {
        display: inline;
     }
@@ -94,7 +126,8 @@
         content: " | ";
     }
     .cmp-languagenavigation__item--active > .cmp-languagenavigation__item-link {
-        font-weight: bold;
+        font-weight: normal;
+        color: #fff;
     }
 
     //== Search

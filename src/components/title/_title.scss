@@ -19,9 +19,25 @@ font-weight: 100;
 font-family: 'Roboto', sans-serif;
 font-weight: 300;
 font-size: 30px;
-line-height: 20px;
+/*line-height: 20px;*/
 color: #666;
 box-sizing: border-box;
 float: left!important;
 }
 .cmp-title__link {}
+
+.cmp-title__text::first-letter{
+  color: white;
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 red;
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+}
+
+.cmp-title--example{
+  font-weight: 1200;
+
+}
