@@ -26,18 +26,27 @@ float: left!important;
 }
 .cmp-title__link {}
 
-.cmp-title__text::first-letter{
+.cmp-title--example .cmp-title  .cmp-title__text{
+  font-weight: 300;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.45rem;
+  font-size: 45px;
+}
+.cmp-title--example .cmp-title__text::first-letter{
   color: white;
-    background-color: black;
+    background-color: #666;
     border-radius: 2px;
-    box-shadow: 3px 3px 0 red;
-    font-size: 250%;
+    box-shadow: 3px 3px 0 #333333;
+  //  font-size:100%;
     padding: 6px 3px;
     margin-right: 6px;
     float: left;
+    -webkit-font-smoothing: antialiased;
 }
 
-.cmp-title--example{
-  font-weight: 1200;
+//.cmp-title--example .cmp-title .cmp-title__text
 
-}
+.font-color-gold .cmp-title__text{
+     color: rgb(192, 159, 70);
+ }
